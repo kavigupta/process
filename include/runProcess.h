@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------------
    (c) The University of Glasgow 2004
 
-   Interface for code in runProcess.c (providing support for System.Process)
+   Interface for code in runProcess.c (providing support for System.ProcessNew)
    ------------------------------------------------------------------------- */
 
 #include "HsProcessConfig.h"

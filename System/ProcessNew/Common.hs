@@ -1,6 +1,6 @@
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE RecordWildCards #-}
-module System.Process.Common
+module System.ProcessNew.Common
     ( CreateProcess (..)
     , CmdSpec (..)
     , StdStream (..)
@@ -146,7 +146,7 @@ data StdStream
 -- ProcessHandle type
 
 {- | A handle to a process, which can be used to wait for termination
-     of the process using 'System.Process.waitForProcess'.
+     of the process using 'System.ProcessNew.waitForProcess'.
 
      None of the process-creation functions in this library wait for
      termination: they all return a 'ProcessHandle' which may be used

@@ -1,7 +1,7 @@
 module Main where
 
 import System.IO.Error
-import System.Process
+import System.ProcessNew
 
 main :: IO ()
 main = do test1 `catchIOError` \e -> putStrLn ("Exc: " ++ show e)

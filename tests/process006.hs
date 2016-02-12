@@ -2,7 +2,7 @@ module Main where
 
 import Control.Concurrent
 import System.IO
-import System.Process
+import System.ProcessNew
 import Control.Monad
 import Control.Exception
 

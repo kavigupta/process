@@ -1,6 +1,6 @@
 {-# OPTIONS -cpp #-}
 import System.IO
-import System.Cmd
+import System.CmdNew
 import System.Environment
 
 -- echo can't be run outside of the shell in MSYS, hence:

@@ -2,7 +2,7 @@ module Main where
 
 import Control.Concurrent
 import System.IO
-import System.Process
+import System.ProcessNew
 
 launch :: String -> IO String
 launch i = do (hin,hout,herr,ph) <- runInteractiveProcess "cat" [] Nothing Nothing

@@ -2,7 +2,7 @@ module Main (main) where
 
 import Control.Concurrent
 import System.IO
-import System.Cmd
+import System.CmdNew
 import System.Directory
 
 main = do

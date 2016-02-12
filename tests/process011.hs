@@ -1,4 +1,4 @@
-import System.Process
+import System.ProcessNew
 import System.IO
 import Control.Exception
 import Control.Concurrent

@@ -1,6 +1,6 @@
 import Control.Monad
 import System.Exit
-import System.Process
+import System.ProcessNew
 import Data.Maybe
 
 -- Test that we get the right exit code for processes that terminate

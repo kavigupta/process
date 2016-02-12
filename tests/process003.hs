@@ -7,7 +7,7 @@
 
 import System.IO
 import Control.Concurrent
-import System.Process
+import System.ProcessNew
 
 main = do
   hClose stdin -- everything works as expected if the handle isn't closed.

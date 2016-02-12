@@ -7,7 +7,7 @@
 
 -----------------------------------------------------------------------------
 -- |
--- Module      :  System.Cmd
+-- Module      :  System.CmdNew
 -- Copyright   :  (c) The University of Glasgow 2001
 -- License     :  BSD-style (see the file libraries/base/LICENSE)
 --
@@ -18,15 +18,14 @@
 -- Executing an external command.
 --
 -- This module provides a simple interface for executing external commands.
--- For a more complex, but more powerful, interface, see the "System.Process"
+-- For a more complex, but more powerful, interface, see the "System.ProcessNew"
 -- module.
 --
 -----------------------------------------------------------------------------
 
-module System.Cmd {-# DEPRECATED "Use \"System.Process\" instead" #-} -- deprecated in 7.8
+module System.CmdNew {-# DEPRECATED "Use \"System.ProcessNew\" instead" #-} -- deprecated in 7.8
     ( system,        -- :: String -> IO ExitCode
       rawSystem,     -- :: FilePath -> [String] -> IO ExitCode
     ) where
 
-import System.Process
-
+import System.ProcessNew

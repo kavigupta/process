@@ -1,6 +1,6 @@
 
 import System.IO.Error
-import System.Process
+import System.ProcessNew
 
 main :: IO ()
 main = do run "true"

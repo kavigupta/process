@@ -1,5 +1,5 @@
 
-import System.Process
+import System.ProcessNew
 import System.IO
 import System.Posix
 import System.Exit

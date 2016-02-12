@@ -1,5 +1,5 @@
 {-# OPTIONS -cpp #-}
-import System.Process
+import System.ProcessNew
 import System.IO
 
 #ifdef mingw32_HOST_OS

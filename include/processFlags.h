@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------------
    (c) The University of Glasgow 2004
 
-   Flags used in runProcess.c and for System.Process.Internals
+   Flags used in runProcess.c and for System.ProcessNew.Internals
    ------------------------------------------------------------------------- */
 
 #define RUN_PROCESS_IN_CLOSE_FDS 0x1

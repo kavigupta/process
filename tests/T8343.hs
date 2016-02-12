@@ -1,4 +1,4 @@
-import System.Process
+import System.ProcessNew
 import System.Timeout
 
 main = timeout 1000000 $ do -- The outer timeout shouldn't trigger

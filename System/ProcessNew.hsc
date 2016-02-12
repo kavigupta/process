@@ -8,7 +8,7 @@
 
 -----------------------------------------------------------------------------
 -- |
--- Module      :  System.Process
+-- Module      :  System.ProcessNew
 -- Copyright   :  (c) The University of Glasgow 2004-2008
 -- License     :  BSD-style (see the file libraries/base/LICENSE)
 --
@@ -23,7 +23,7 @@
 -- ToDo:
 --      * Flag to control whether exiting the parent also kills the child.
 
-module System.Process (
+module System.ProcessNew (
     -- * Running sub-processes
     createProcess,
     createProcess_,
@@ -72,7 +72,7 @@ module System.Process (
 
 import Prelude hiding (mapM)
 
-import System.Process.Internals
+import System.ProcessNew.Internals
 
 import Control.Concurrent
 import Control.DeepSeq (rnf)

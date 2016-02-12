@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------------
    (c) The University of Glasgow 2004
 
-   Support for System.Process
+   Support for System.ProcessNew
    ------------------------------------------------------------------------- */
 
 #if defined(_MSC_VER) || defined(__MINGW32__) || defined(_WIN32)
@@ -23,7 +23,7 @@
    ------------------------------------------------------------------------- */
 
 // If a process was terminated by a signal, the exit status we return
-// via the System.Process API is (-signum). This encoding avoids collision with
+// via the System.ProcessNew API is (-signum). This encoding avoids collision with
 // normal process termination status codes. See also #7229.
 #define TERMSIG_EXITSTATUS(s) (-(WTERMSIG(s)))
 

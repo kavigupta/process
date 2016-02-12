@@ -1,6 +1,6 @@
 module Main where
 
-import System.Process
+import System.ProcessNew
 
 main :: IO ()
 main = do

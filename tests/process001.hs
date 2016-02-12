@@ -1,6 +1,6 @@
 {-# OPTIONS -cpp #-}
 import System.IO
-import System.Process
+import System.ProcessNew
 
 #ifdef mingw32_HOST_OS
 cmd = "ls"

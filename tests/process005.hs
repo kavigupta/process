@@ -2,7 +2,7 @@ module Main where
 
 import Control.Concurrent
 import System.IO
-import System.Process
+import System.ProcessNew
 
 main :: IO ()
 main = do p <- foldl (>>=) (return stdin) (replicate 10 docat) >>= docat0

@@ -1,6 +1,6 @@
 {-# LANGUAGE BangPatterns #-}
 {-# LANGUAGE CPP #-}
-module System.Process.Posix
+module System.ProcessNew.Posix
     ( mkProcessHandle
     , translateInternal
     , createProcess_Internal
@@ -40,7 +40,7 @@ import System.Posix.Signals as Sig
 import qualified System.Posix.IO as Posix
 import System.Posix.Process (getProcessGroupIDOf)
 
-import System.Process.Common
+import System.ProcessNew.Common
 
 #include "HsProcessConfig.h"
 #include "processFlags.h"

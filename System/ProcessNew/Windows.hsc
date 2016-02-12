@@ -1,5 +1,5 @@
 {-# LANGUAGE CPP #-}
-module System.Process.Windows
+module System.ProcessNew.Windows
     ( mkProcessHandle
     , translateInternal
     , createProcess_Internal
@@ -14,7 +14,7 @@ module System.Process.Windows
     , interruptProcessGroupOfInternal
     ) where
 
-import System.Process.Common
+import System.ProcessNew.Common
 import Control.Concurrent
 import Control.Exception
 import Data.Bits

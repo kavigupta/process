@@ -2,7 +2,7 @@ module Main where
 
 import Control.Concurrent
 import System.IO
-import System.Process
+import System.ProcessNew
 
 main :: IO ()
 main = do (_,Just hout,_,p) <- createProcess (proc "sh" ["-c", "echo start; sleep 10"])

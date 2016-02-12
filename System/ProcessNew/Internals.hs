@@ -5,7 +5,7 @@
 
 -----------------------------------------------------------------------------
 -- |
--- Module      :  System.Process.Internals
+-- Module      :  System.ProcessNew.Internals
 -- Copyright   :  (c) The University of Glasgow 2004
 -- License     :  BSD-style (see the file libraries/base/LICENSE)
 --
@@ -14,12 +14,12 @@
 -- Portability :  portable
 --
 -- __Note:__ This module exports internal implementation details that may
--- change anytime.  If you want a more stable API, use "System.Process"
+-- change anytime.  If you want a more stable API, use "System.ProcessNew"
 -- instead.
 --
 -----------------------------------------------------------------------------
 
-module System.Process.Internals (
+module System.ProcessNew.Internals (
     ProcessHandle(..), ProcessHandle__(..),
     PHANDLE, closePHANDLE, mkProcessHandle,
     modifyProcessHandle, withProcessHandle,
@@ -48,26 +48,26 @@ import System.IO
 import GHC.IO.Handle.FD (fdToHandle)
 import System.Posix.Internals (FD)
 
-import System.Process.Common
+import System.ProcessNew.Common
 
 #if WINDOWS
-import System.Process.Windows
+import System.ProcessNew.Windows
 #else
-import System.Process.Posix
+import System.ProcessNew.Posix
 #endif
 
 -- ----------------------------------------------------------------------------
 
 -- | This function is almost identical to
--- 'System.Process.createProcess'. The only differences are:
+-- 'System.ProcessNew.createProcess'. The only differences are:
 --
 -- * 'Handle's provided via 'UseHandle' are not closed automatically.
 --
 -- * This function takes an extra @String@ argument to be used in creating
 --   error messages.
 --
--- This function has been available from the "System.Process.Internals" module
--- for some time, and is part of the "System.Process" module since version
+-- This function has been available from the "System.ProcessNew.Internals" module
+-- for some time, and is part of the "System.ProcessNew" module since version
 -- 1.2.1.0.
 --
 -- @since 1.2.1.0
@@ -142,7 +142,7 @@ translate = translateInternal
 -- Deprecated / compat
 
 {-# DEPRECATED runGenProcess_
-      "Please do not use this anymore, use the ordinary 'System.Process.createProcess'. If you need the SIGINT handling, use delegate_ctlc = True (runGenProcess_ is now just an imperfectly emulated stub that probably duplicates or overrides your own signal handling)." #-}
+      "Please do not use this anymore, use the ordinary 'System.ProcessNew.createProcess'. If you need the SIGINT handling, use delegate_ctlc = True (runGenProcess_ is now just an imperfectly emulated stub that probably duplicates or overrides your own signal handling)." #-}
 runGenProcess_
  :: String                     -- ^ function name (for error messages)
  -> CreateProcess

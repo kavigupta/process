@@ -46,15 +46,15 @@
 
   * New `IsString CmdSpec` instance
 
-  * Expose documentation for `System.Process.Internals`
+  * Expose documentation for `System.ProcessNew.Internals`
 
-  * With GHC 7.10, `System.Cmd` and `System.Process` are now `Safe`
+  * With GHC 7.10, `System.CmdNew` and `System.ProcessNew` are now `Safe`
     (when compiled with older GHC versions they are just `Trustworthy`)
 
   * Expose `createProcess_` function, and document behavior of `UseHandle` for
     `createProcess`. See [issue #2](https://github.com/haskell/process/issues/2).
 
-  * New `System.Process.createPipe` operation.
+  * New `System.ProcessNew.createPipe` operation.
     See also [GHC #8943](https://ghc.haskell.org/trac/ghc/ticket/8943)
 
 ## 1.2.0.0  *Dec 2013*
@@ -68,7 +68,7 @@
   * New `delegate_ctlc` field in `CreateProcess` for WCE handling
   * Use `ExitFailure (-signum)` on Unix when a proc is terminated due to
     a signal.
-  * Deprecate `module System.Cmd`
+  * Deprecate `module System.CmdNew`
   * On non-Windows, the child thread now comunicates any errors back
     to the parent thread via pipes.
   * Fix deadlocks in `readProcess` and `readProcessWithExitCode`
